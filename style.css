@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+
+}
+
+.barraSup{
+    background-color: aqua;
+    color: black;
+    padding: 20px
+
+}
+
+li{
+    display: inline-block;
+    padding-right: 5vw;
+}
+
+.banner{
+    background-image: url("imagens/img4.jpg");
+    height: 401px;
+    width: 800px;
+
+}
+
+.conteudo{
+    padding: 50px;
+}
+
+.galeria {
+    padding: 50px;
+}
+
+.galeria img{
+    height: 250px;
+    width: 350px;
+}
+
+.foot{
+    background-color: rgb(32, 12, 44);
+    color: white;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 700px){
+
+        body{
+            font-size: 30px;
+        }
+        .conteudo{
+            padding: 10px;
+        }
+        .galeria{
+            padding: 10px;
+        }
+        .galeria img{
+            width: 100%;
+            height: auto;
+        }
+
+        .barraSup{
+            text-align: center;
+        }
+
+}
