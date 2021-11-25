@@ -1,45 +1,147 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none
 
 }
-
-.barraSup{
-    background-color: rgb(125, 214, 214);
-    color: black;
-    padding: 20px
-
-}
-
-li{
-    display: inline-block;
-    padding-right: 5vw;
-}
-
-.banner{
-    background-color: rgb(58, 104, 104);
-    background-position: 0px 0px,center;
+/* ----------BARRA SUPERIOR COM OS MENUS */
+nav{
     width: 100%;
-    height: 401px;
-
+    height: 80px;
+    background:rgb(89, 223, 223) ;
+    
+}
+body{
+    font-family: Helvetica;
+}
+.i{
+ font-size: 20px;
 }
 
-.imgBanner{
-    background-image: url("imagens/img4.jpg");
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 0 100px;
+    line-height: 80px;
+}
+label #icon{
+    cursor: pointer;
+    font-style: normal;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: coral;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition:  .5s;
+}
+nav icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+}
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 500px){
+    nav icon{
+        display: block;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(107, 44, 20);
+        top: 80px;
+        left: 0%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    nav.active,a:hover{
+        border:none;
+        color: rgb(46, 26, 19);
+    }
+    nav ul.slow{
+        left: 0;
+    }
+}
+
+
+
+
+/* ----------BANNER------------------BANNER---------------- */
+.banner{
+    display: table;
+    background-color: rgb(16, 61, 61);
+    width: 100%;
+}
+
+.img{
+    display: table-cell;
+    float: left;
+}
+
+.text{
+    display: table-cell;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/* .imgBanner{
+    background-image: url("imagens/bot.png");
     background-position: 0px 0px,center;
     background-size: 100% 100%;
     width: 40%;
     height: 401px;
 
 
-}
+} */
 
-
+/* ----------CONTEUDO-------------------------CONTEUDO---------------------- */
 .conteudo{
     padding: 50px;
 }
 
 
-
+/* ----------GALERIA--------------------GALERIA------------------------- */
 .galeria {
     padding: 50px;
 }
@@ -64,11 +166,11 @@ li{
 
 
 
-
+/* ----------FOOOOOOOOOOOOOOOOOOOOOOOT------------------------------ */
 
 
 .foot{
-    background-color: rgb(32, 12, 44);
+    background-color: rgb(165, 105, 27);
     color: white;
     padding: 50px;
 }
@@ -79,17 +181,17 @@ li{
 
 @media screen and (min-width: 600px){
 
-        .imgBanner{
-            background-image: url("imagens/img4.jpg");
+        /* .imgBanner{
+            background-image: url("imagens/bot.png");
             background-size: 100% 100%;
-            background-color: rgb(4, 63, 63);
+            background-color: rgb(16, 61, 61);
+            width: 40%;
+        } */
+
+
+        .banner, img, #text{
+            display: flex;
         }
-
-
-        body{
-            font-size: 30px;
-        }
-
 
         
         .conteudo{
@@ -112,13 +214,6 @@ li{
             flex-direction: row;
             display:flex;
             justify-content: space-between;
-        }
-
-
-
-
-        .barraSup{
-            text-align: center;
         }
 
 }

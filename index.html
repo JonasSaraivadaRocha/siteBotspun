@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTSPUN</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href = "https: //fonts.googleapis.com/css2? family = Open + Sans & display = swap "rel =" stylesheet ">
 </head>
 
 <body>
 <!--    BARRA SUPERIOR-->
-    <nav class="barraSup" align="center"> 
-        <label>
+    <nav> 
+        <label class="logo">BotSpun</label>
+    
             <ul>
-                <li><a href="#">home</a></li>
+                <li class="active"><a href="#">home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </label>
+            <label class="icon">
+                <span class="fas fa-bars"></span>
+            </label>
     </nav>
-    
-<!--    BANNER-->
-    <div class="banner" align="right"> 
-        <!--IMAGEM DO BANNER-->
-        <div class="imgBanner"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $("ul").toggleClass('slow')
+            })
+        })
+    </script>
 
-        </div>
+
+
+
+    <!--    BANNER-->
+    <div class="banner"> 
+
+        <div class="img"><img src="imagens/bot.png"></div>
+
+        <div class="text"><p>Olá, eu sou um assistente virtual e me chamo BotSpun, 
+            estou aqui para ajudar os pequenos empreendedores, 
+            tanto de venda de produto ou prestação de serviços, 
+            na qual o seu cliente acaba querendo pagar depois, 
+            que tal gerenciarmos juntos essa demanda? </p></div>
+
         
     </div>
 
@@ -59,33 +78,53 @@
     <div class="galeria"> 
 
         <div class="bot" align="center">
-            <p>islikes, or avoids pleasure itself, because it 
-                is pleasure, but because those who do not know how to 
-                pursue pleasure rationally encounter consequences that 
-                are extremely painful. Nor again is there anyone who 
-                loves or pursues or desires to obtain pain of itself, 
-                because it is pain, but because occasionally </p>
+            <label > O que é um Bot?</label>
+            <p>Os bots são aplicações autônomas que rodam na Internet 
+                enquanto desempenham algum tipo de tarefa 
+                pré-determinada.
+                Na prática, bots são como programas de computador 
+                criados para rodar pela Internet realizando tarefas 
+                repetitivas e automatizadas. Um exemplo simples de 
+                como essa tecnologia facilita a vida digital pode ser 
+                visto na timeline do Facebook. Se ela não fosse 
+                automatizada, para atualizá-la seria preciso que os 
+                usuários visitassem cada página, grupo ou amigo para 
+                saber das útimas fotos, notícias e postagens. O "robô" 
+                que controla o Feed de Notícias faz esse trabalho por 
+                nós.
+                </p>
 
         </div>
 
         <div class="IA" align="center">
-            <p>slikes, or avoids pleasure itself, because it 
-                is pleasure, but because those who do not know how to 
-                pursue pleasure rationally encounter consequences that 
-                are extremely painful. Nor again is there anyone who 
-                loves or pursues or desires to obtain pain of itself, 
-                because it is pain, but because occasionally</p>
+            <label > O que é uma IA?</label>
+            <p>Podemos definir inteligência artificial, no grosso 
+                modo, como a capacidade das máquinas de pensarem como 
+                seres humanos: aprender, perceber e decidir quais 
+                caminhos seguir, de forma racional, diante de 
+                determinadas situações. Podemos dizer que a IA 
+                aprende como uma criança. Aos poucos, o sistema 
+                (a depender do objetivo para o qual ele foi criado) absorve, 
+                analisa e organiza os dados de forma a entender e identificar 
+                o que são objetos, pessoas, padrões e reações de todos os tipos.</p>
 
 
         </div>
 
         <div class="chatbot" align="center">
-            <p>slikes, or avoids pleasure itself, because it 
-                is pleasure, but because those who do not know how to 
-                pursue pleasure rationally encounter consequences that 
-                are extremely painful. Nor again is there anyone who 
-                loves or pursues or desires to obtain pain of itself, 
-                because it is pain, but because occasionally</p>
+            <label > O que é um ChatBot?</label>
+            <p>O chatbot de inteligência artificial é um software de 
+                mensagens que analisa os dados fornecidos pelo usuário. 
+                Nessa análise, o sistema encontra padrões que levam a 
+                sugestões que contribuem para a solução do problema ou 
+                questionamento apontado.
+                Ou seja, esses softwares processam os dados recebidos, 
+                que podem ser provenientes da fala ou escrita, e 
+                reconhecem padrões. Para isso, uma das tecnologias 
+                utilizadas é a NLP (Processamento de Linguagem Natural).                
+                Essa linha de estudo da inteligência artificial permite 
+                que os sistemas que a utilizam consigam analisar o que 
+                está sendo solicitado para, assim, oferecer respostas.</p>
 
         </div>
 
