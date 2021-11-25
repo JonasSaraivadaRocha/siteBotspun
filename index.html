@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTSPUN</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href = "https: //fonts.googleapis.com/css2? family = Open + Sans & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,15 +19,17 @@
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <label class="icon">
-                <span class="fas fa-bars"></span>
+            <label id="icon">
+                <i class="fa fa-align-justify" style="font-size:36px;"></i>
             </label>
     </nav>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
         $(document).ready(function(){
             $('#icon').click(function(){
-                $("ul").toggleClass('slow')
+                $("ul").toggleClass('slow'); console.log("teste");
             })
         })
     </script>
@@ -43,7 +42,8 @@
 
         <div class="img"><img src="imagens/bot.png"></div>
 
-        <div class="text"><p>Olá, eu sou um assistente virtual e me chamo BotSpun, 
+        <div class="text">
+            <p> Olá, eu sou um assistente virtual e me chamo BotSpun, 
             estou aqui para ajudar os pequenos empreendedores, 
             tanto de venda de produto ou prestação de serviços, 
             na qual o seu cliente acaba querendo pagar depois, 
@@ -56,9 +56,9 @@
 
 
 <!--    CONTEUDO-->
-    <div class="conteudo" align="center"> 
+    <div class="conteudo sobre" align="center" > 
         <h2>Sobre</h2>
-        <p>Sabemos que no mercado atual as grandes distribuidoras e supermercados não
+        <p id="tsobre"> Sabemos que no mercado atual as grandes distribuidoras e supermercados não
             possuem um serviço de fiado, até porque existem vários fatores justificáveis para isso, no
             entanto os pequenos comerciantes que vivem na correria e possuem amigos e
             conhecidos confiáveis acabam vendendo fiado para os mesmo, não só comerciantes
@@ -68,7 +68,7 @@
             dependendo do proprietário, pensando nisso por que não criar um sistema para amenizar
             a dor de cabeça e conseguir gerenciar de forma legal e eficaz esses fiados?.</p>
 
-        <p>O objetivo é amenizar o trabalho na correria e ajudar a gerenciar os comerciantes
+        <p id="tsobre2">O objetivo é amenizar o trabalho na correria e ajudar a gerenciar os comerciantes
             nos serviços prestados ou produtos vendidos de forma fiada, com o sistema inteligente de
             gerenciamento de fiado o comerciante ou prestador de serviço consegue saber quem,
             quando e quanto lhe devem sem gastar muito tempo.</p>
@@ -79,52 +79,35 @@
 
         <div class="bot" align="center">
             <label > O que é um Bot?</label>
-            <p>Os bots são aplicações autônomas que rodam na Internet 
+            <p id="tbot"> Os bots são aplicações autônomas que rodam na Internet 
                 enquanto desempenham algum tipo de tarefa 
                 pré-determinada.
                 Na prática, bots são como programas de computador 
                 criados para rodar pela Internet realizando tarefas 
-                repetitivas e automatizadas. Um exemplo simples de 
-                como essa tecnologia facilita a vida digital pode ser 
-                visto na timeline do Facebook. Se ela não fosse 
-                automatizada, para atualizá-la seria preciso que os 
-                usuários visitassem cada página, grupo ou amigo para 
-                saber das útimas fotos, notícias e postagens. O "robô" 
-                que controla o Feed de Notícias faz esse trabalho por 
-                nós.
+                repetitivas e automatizadas.
                 </p>
 
         </div>
 
         <div class="IA" align="center">
             <label > O que é uma IA?</label>
-            <p>Podemos definir inteligência artificial, no grosso 
+            <p id="tia">Podemos definir inteligência artificial, no grosso 
                 modo, como a capacidade das máquinas de pensarem como 
                 seres humanos: aprender, perceber e decidir quais 
                 caminhos seguir, de forma racional, diante de 
-                determinadas situações. Podemos dizer que a IA 
-                aprende como uma criança. Aos poucos, o sistema 
-                (a depender do objetivo para o qual ele foi criado) absorve, 
-                analisa e organiza os dados de forma a entender e identificar 
-                o que são objetos, pessoas, padrões e reações de todos os tipos.</p>
+                determinadas situações.</p>
 
 
         </div>
 
         <div class="chatbot" align="center">
             <label > O que é um ChatBot?</label>
-            <p>O chatbot de inteligência artificial é um software de 
+            <p id="tchat">O chatbot de inteligência artificial é um software de 
                 mensagens que analisa os dados fornecidos pelo usuário. 
                 Nessa análise, o sistema encontra padrões que levam a 
                 sugestões que contribuem para a solução do problema ou 
                 questionamento apontado.
-                Ou seja, esses softwares processam os dados recebidos, 
-                que podem ser provenientes da fala ou escrita, e 
-                reconhecem padrões. Para isso, uma das tecnologias 
-                utilizadas é a NLP (Processamento de Linguagem Natural).                
-                Essa linha de estudo da inteligência artificial permite 
-                que os sistemas que a utilizam consigam analisar o que 
-                está sendo solicitado para, assim, oferecer respostas.</p>
+                É uma fusão de bot + IA</p>
 
         </div>
 
@@ -133,10 +116,20 @@
         
     </div>
 <!--    FINAL-->
-    <div class="foot" align="center"> 
-        jonasemailbot@botspun.com
-        
-    </div>
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h3>Como obter</h3>
+                <p id="fouter">
+                    Enviar uma mensagem de solicitação para o 
+                    seguinte e-mail: botspun@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 </body>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,8 @@ nav{
     
 }
 body{
-    font-family: Helvetica;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(192, 214, 232, 0.796);
 }
 .i{
  font-size: 20px;
@@ -51,16 +53,22 @@ a.active,a:hover{
     border: 1px solid white;
     transition:  .5s;
 }
-nav icon{
+ nav #icon{
     color: white;
     font-size: 30px;
     line-height: 80px;
     float: right;
     margin-right: 40px;
     cursor: pointer;
-    display: block;
+    display: none
 }
 @media (max-width: 1048px){
+
+    nav{
+        display: inline-block;
+        width: 100%;
+        height: auto
+    }
     label.logo{
         font-size: 32px;
         padding-left: 60px;
@@ -72,8 +80,8 @@ nav icon{
         font-size: 17px;
     }
 }
-@media (max-width: 500px){
-    nav icon{
+@media (max-width: 909px){
+    nav #icon{
         display: block;
     }
     nav ul{
@@ -100,6 +108,7 @@ nav icon{
     }
     nav ul.slow{
         left: 0;
+        display: none;
     }
 }
 
@@ -123,19 +132,28 @@ nav icon{
     float: left;
     margin-top: 40px;
     margin-left: 20px;
+    color: coral;
 }
 
-/* .imgBanner{
-    background-image: url("imagens/bot.png");
-    background-position: 0px 0px,center;
-    background-size: 100% 100%;
-    width: 40%;
-    height: 401px;
+label{
+    color: coral;
+}
 
+#tsobre, #tsobre2,#tbot, #tia, #tchat{
+    text-align: left;
+    font-family: arial, sans-serif;
+}
 
-} */
+#tbot, #tia, #tchat{
+    color: white;
+}
 
 /* ----------CONTEUDO-------------------------CONTEUDO---------------------- */
+
+.sobre{
+    font-size: 15px;
+}
+
 .conteudo{
     padding: 50px;
 }
@@ -147,20 +165,17 @@ nav icon{
 }
 
 .bot{
-    background-color: rgb(230, 214, 179);
+    background-color: rgb(146, 219, 225);
     height: auto;
-      /* float: left; */
 
 }
 .IA{
-    background-color: rgb(114, 90, 38);
+    background-color:rgb(121, 204, 124);
     height: auto;
-    /* float: left; */
 }
 .chatbot{
-    background-color: rgb(66, 56, 35);
+    background-color: rgb(11, 79, 28);
     height: auto;
-    /* float: left; */
 }
 
 
@@ -169,10 +184,17 @@ nav icon{
 /* ----------FOOOOOOOOOOOOOOOOOOOOOOOT------------------------------ */
 
 
-.foot{
-    background-color: rgb(165, 105, 27);
+footer{
+    background-color: rgb(13, 99, 106);
     color: white;
-    padding: 50px;
+    padding: 50px 100px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#fouter{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
