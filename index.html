@@ -15,9 +15,9 @@
         <label class="logo">BotSpun</label>
     
             <ul>
-                <li class="active"><a href="#">home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li class="active"><a href="#" class="menu">home</a></li>
+                <li><a href="#sobre" class="menu">Sobre</a></li>
+                <li><a href="#contato" class="menu">Contato</a></li>
             </ul>
             <label id="icon">
                 <i class="fa fa-align-justify" style="font-size:36px;"></i>
@@ -29,9 +29,13 @@
    <script>
         $(document).ready(function(){
             $('#icon').click(function(){
-                $("ul").toggleClass('slow'); console.log("teste");
-            })
-        })
+                $("ul").toggleClass('slow'); 
+            });
+
+            $('.menu').click(() => {
+                $("ul").toggleClass('slow'); 
+            });
+        });
     </script>
 
 
@@ -56,7 +60,7 @@
 
 
 <!--    CONTEUDO-->
-    <div class="conteudo sobre" align="center" > 
+    <div class="conteudo sobre" align="center" id="sobre"> 
         <h2>Sobre</h2>
         <p id="tsobre"> Sabemos que no mercado atual as grandes distribuidoras e supermercados não
             possuem um serviço de fiado, até porque existem vários fatores justificáveis para isso, no
@@ -117,7 +121,7 @@
     </div>
 <!--    FINAL-->
     <footer>
-        <div class="container">
+        <div class="container" id="contato">
             <div class="sec aboutus">
                 <h3>Como obter</h3>
                 <p id="fouter">
